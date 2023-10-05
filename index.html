@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0_0 Prueba 0_0</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <section class="header">
+    <div class="menu">
+        <h1>Edit Profile</h1>
+        <ul>
+            <li><a href="">User info</a></li>
+            <li><a href="">Billing Information</a></li>
+            <li><a href="sections/createUser.html">Create User</a></li>
+        </ul>
+    </div>
+    </section>
+    <section>
+        <div class="edit-user">
+            <form id="update-form">
+                <label for="full-name">Full Name</label>
+                <input class="controls" type="text" name="full-name" id="full-name">
+                <label for="user-name">Username</label>
+                <input class="controls" type="text" name="user-name" id="user-name">
+                <label for="password">Password</label>
+                <input class="controls" type="password" name="password" id="password">
+                <label for="confirm-password">Confirm Password</label>
+                <input class="controls" type="password" name="confirm-password" id="confirm-password">
+                <label for="email-address">Email Address</label>
+                <input class="controls" type="email" name="" id="email-address">
+                <label for="confirt-email-address">Confirm Email Address</label>
+                <input class="controls" type="email" name="confirt-email-address" id="confirt-email-address">
+                <h4>Social Profile</h4>
+                <input class="controls" type="text" name="facebook" id="facebook">
+                <input class="controls" type="text" name="x" id="x">
+                <input type="submit" value="Update info">
+            </form>
+        </div>
+    </section>
+    <section class="card">
+        <div>
+            <div>
+                <h4 id="full-name"></h4>
+                <p id="nickname"></p>
+            </div>
+            <div>
+                <img id="image">
+            </div>
+            <div>
+                <form action="">
+                    <form id="formulario" enctype="multipart/form-data">
+                        <label for="imagen">Upload a new avatar. Larger image will be resized automatically. <p>Maximum upload size is <span>1 MB</span></p></label>
+                        <input type="file" name="imagen" id="imagen"  accept="image/*" required>
+                        <input type="button" value="Upload New Photo" onclick="subirImagen()">
+                    </form>
+                </form>
+                <div>Member Since: <p id="currenDate"></p></div>
+            </div>
+        </div>
+    </section>
+    <script src="js/user/byUser.js"></script>
+    <script src="js/user/updateInformation.js"></script>
+    <script src="js/image/saveImage.js"></script>
+    <script src="js/general/currentDate.js"></script>
+</body>
+</html>
