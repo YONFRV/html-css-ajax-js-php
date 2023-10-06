@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
             confirtEmailAddress.value = usuario.email;
             facebook.value = usuario.facebook;
             x.value = usuario.twitter;
-            nickname = usuario.nickname;;
-            fullNameInformation = usuario.name + ' '+usuario.username;
+            nickname.textContent = usuario.nickname;;
+            fullNameInformation.textContent = usuario.name + ' '+usuario.username;
         }
     };
     xhr.send();

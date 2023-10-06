@@ -40,22 +40,26 @@
         <section class="card">
             <div>
                 <div class="data-information">
-                    <h4 id="full-name-information">nmbmnb mn</h4>
-                    <p id="nickname">.,mn ,mb</p>
+                    <h4 id="full-name-information"></h4>
+                    <p id="nickname"></p>
                 </div>
                 <div class="image-perfil">
                     <img id="image">
                 </div>
                 <div class="form-image">
                         <form id="formulario" enctype="multipart/form-data">
-                            <label for="imagen">Upload a new avatar. Larger image will be resized automatically. <p>Maximum upload size is <span>1 MB</span></p></label>
-                            <input class="imagen" type="file" name="imagen" id="imagen"  accept="image/*" required>
-                            <input type="button" value="Upload New Photo" onclick="subirImagen()">
+                            <input class="button" type="button" value="Upload New Photo" onclick="subirImagen()">
+                            <br>
+                            <div>
+                                <label for="imagen">Upload a new avatar. Larger image will be resized automatically. <p>Maximum upload size is <span>1 MB</span></p></label>
+                                <input class="imagen" type="file" name="imagen" id="imagen"  accept="image/*" required>
+                            </div>
                         </form>
                     <div>Member Since: <p id="currenDate"></p></div>
                 </div>
             </div>
         </section>
         <script src="../assets/js/editUser.js"></script>
+        <script src="../assets/js/general/currentDate.js"></script>
 </body>
 </html>
