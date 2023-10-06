@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Users</title>
+    <link rel="stylesheet" href="assets/css/style-index.css">
 </head>
 <body>
-<h1>CRUD de Usuarios</h1>
+<h1>Usuarios</h1>
+    <section>
     <table id="usuarios">
         <thead>
             <tr>
@@ -20,6 +22,7 @@
             <!-- Datos de usuarios se cargarán aquí usando AJAX -->
         </tbody>
     </table>
+    </section>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
