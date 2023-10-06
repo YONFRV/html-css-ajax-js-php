@@ -1,0 +1,99 @@
+  .information{
+    position: absolute;
+    top: 15%;
+    width: 60%; 
+    right: 3em;
+    box-shadow: 7px 13px 37px #000;
+    height: 35em;
+  }
+
+  .information nav{
+    background: rgba(248,249,251,255);
+    height: 9em;
+
+  }
+
+  .information nav h1{
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    font-size: 2em;
+  }
+
+  .information nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 1em;
+    display: flex;
+  }
+  .information nav ul li{
+    margin-right: 10px; /* Espacio entre los botones */
+    padding: 10px 20px; /* Espaciado interno de los botones */
+    color: #000000; /* Color de texto por defecto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s, border-color 0.3s; /* Transiciones suaves */
+  }
+
+  .information nav ul li:hover{
+    border-color: #0056b3; /* Cambia el color del borde al pasar por encima */
+    border-bottom: 2px solid  #0056b3;
+  }
+
+    .information nav ul li.selected{ 
+      background-color: #0056b3; /* Cambia el color de fondo cuando se selecciona */
+      border-color: #0056b3; /* Cambia el color del borde cuando se selecciona */
+  
+     }
+
+
+     .information .edit-user{  
+      margin-top: 1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .information .edit-user form{  
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+     /* Estilo para las filas y columnas */
+.row {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Espacio entre las filas */
+}
+
+.column {
+  width: 48%; /* Ancho de las columnas para dos elementos por fila */
+}
+
+.column input{
+  width: 100%; /* Ancho de las columnas para dos elementos por fila */
+  height: 2em;
+  border: 1px solid #ebebeb;
+}
+
+.information .edit-user form label{  
+  margin-bottom: 2em !important;
+  color: #84888a;
+}
+
+.information .edit-user form h4{  
+font-size: 1.5em;
+margin-top: 1em;
+}
+
+.information .edit-user form .button-update{  
+  font-size: 1em;
+  margin-top: 5%;
+  background-color: #ff3d19;
+  text-decoration: none;
+  color: aliceblue;
+  padding: 8px;
+  border: none;
+  border: 1px solid #ee6b52;
+}
