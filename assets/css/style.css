@@ -21,7 +21,8 @@
   left: 3em;
   box-shadow: 7px 13px 37px #000;
   text-align: center;
-  height: 70%;
+  height: 30em;
+  border-radius: 2px;
 }
 .card .data-information{
 margin-top:1em ;
@@ -47,18 +48,48 @@ margin-bottom:1em ;
     margin-bottom:10px;
     color:#4f4f4ff2;
   }
-  .card div .form-image form{
-  text-align: center;
-  justify-content: center; /* Centrar horizontalmente */
-  }
+  .card div .form-image .date{
+    padding-top: 1em;
+    display: flex
+  } 
+
+
   .card div .form-image form .button{
-    background-color: #ff6c00;
+    background-color: #ff3d19;
     text-decoration: none;
     color: aliceblue;
     padding: 8px;
     border: none;
+    border: 1px solid #ee6b52;
 }  
 
+.card div .form-image form .button-image{
+  background-color: #f1f4fd;
+  margin-top: 1em;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #f1f4fd;
+  color: (161,164,173,255);
+
+}
+
+
+.card div .form-image form .button-image input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón personalizado */
+}
+.card div .form-image form .button-image:hover{
+  background-color: rgba(27, 27, 25, 0.171);
+}
+.card div .form-image form .button-image p {
+padding-top: 1em;
+}
 /*
 .card{
   position: absolute;

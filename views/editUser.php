@@ -50,12 +50,12 @@
                         <form id="formulario" enctype="multipart/form-data">
                             <input class="button" type="button" value="Upload New Photo" onclick="subirImagen()">
                             <br>
-                            <div>
+                            <div class="button-image">
                                 <label for="imagen">Upload a new avatar. Larger image will be resized automatically. <p>Maximum upload size is <span>1 MB</span></p></label>
                                 <input class="imagen" type="file" name="imagen" id="imagen"  accept="image/*" required>
                             </div>
                         </form>
-                    <div>Member Since: <p id="currenDate"></p></div>
+                    <div class="date">Member Since: <strong id="currenDate"></strong></div>
                 </div>
             </div>
         </section>
