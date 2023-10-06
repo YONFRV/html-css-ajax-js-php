@@ -8,6 +8,7 @@ function subirImagen() {
         alert('La imagen debe ser menor o igual a 1 MB.');
         return;
     }
+    
     $.ajax({
         url: 'include/image/updateImage.php', // Reemplaza esto con la URL de tu servidor donde procesarás la imagen.
         type: 'POST',

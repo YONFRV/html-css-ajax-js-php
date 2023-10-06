@@ -6,7 +6,13 @@ $(document).ready(function() {
         var confirmPassword = $("#confirm-password").val();
         var email = $("#email-address").val();
         var confirmEmail = $("#confirt-email-address").val();
-        if ($("#email-address")formData.get('imagen').size > 1048576) {
+        // Crea un objeto FormData para recopilar los datos del formulario.
+        var formData = new FormData(this);
+
+        // Agrega la imagen seleccionada al objeto FormData.
+        formData.append('imagen', $('#imagen')[0].files[0]);
+
+        if (formData.get('imagen').size > 1048576) {
             alert('La imagen debe ser menor o igual a 1 MB.');
             return;
         }
@@ -21,24 +27,21 @@ $(document).ready(function() {
             alert("Los correos electrónicos no coinciden. Por favor, inténtalo de nuevo.");
             return;
         }
-
-        // Datos del formulario
-        var formData = {
-            imagen:document.getElementById('imagen').files[0],
-            nickname: $("#nickname").val(),
-            fullName: $("#full-name").val(),
-            userName: $("#user-name").val(),
-            password: password,
-            email: email,
-            facebok:$("#facebook").val(),
-            twitter:$("#x").val()
-        };
-
+        // Agrega los datos del formulario al objeto FormData
+        formData.append('nickname', $("#nickname").val());
+        formData.append('fullName', $("#full-name").val());
+        formData.append('userName', $("#user-name").val());
+        formData.append('password', password);
+        formData.append('email', email);
+        formData.append('facebook', $("#facebook").val());
+        formData.append('twitter', $("#x").val());
         // Realizar la solicitud AJAX para enviar los datos
         $.ajax({
-            url: "include/user/createUser.php",
+            url: "../include/user/createUser.php",
             type: "POST",
             data: formData,
+            processData: false,
+            contentType: false,
             success: function(response) {
                 // Procesar la respuesta del servidor (puedes mostrar un mensaje de éxito)
                 alert(response);
